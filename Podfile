@@ -9,5 +9,14 @@ target 'FindCVS' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'SnapKit'
+  
+  target 'FindCVSTests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'Stubber'
+    pod 'Nimble'
+    pod 'RxBlocking'
+    pod 'RxTest'
+  end
 
 end
