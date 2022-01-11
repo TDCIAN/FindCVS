@@ -46,6 +46,8 @@
 		1E1FB5BD278BADDB003F71DF /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1FB5BC278BADDA003F71DF /* libc++.tbd */; };
 		1E1FB5BF278BADE7003F71DF /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1FB5BE278BADE7003F71DF /* libxml2.tbd */; };
 		1E1FB5C1278BADF5003F71DF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1FB5C0278BADF5003F71DF /* libsqlite3.tbd */; };
+		1E4FA1E2278D05C3007B0253 /* LocalAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4FA1E1278D05C3007B0253 /* LocalAPI.swift */; };
+		1E4FA1E5278D077E007B0253 /* LocalNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4FA1E4278D077E007B0253 /* LocalNetwork.swift */; };
 		1E6FB4F0278C89610044756F /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6FB4EF278C89610044756F /* LocationData.swift */; };
 		1E6FB4F3278C89AE0044756F /* KLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6FB4F2278C89AE0044756F /* KLDocument.swift */; };
 		1E6FB4F5278C8A4F0044756F /* DetailListCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6FB4F4278C8A4F0044756F /* DetailListCellData.swift */; };
@@ -114,6 +116,8 @@
 		1E1FB5BC278BADDA003F71DF /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		1E1FB5BE278BADE7003F71DF /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		1E1FB5C0278BADF5003F71DF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		1E4FA1E1278D05C3007B0253 /* LocalAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAPI.swift; sourceTree = "<group>"; };
+		1E4FA1E4278D077E007B0253 /* LocalNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNetwork.swift; sourceTree = "<group>"; };
 		1E6FB4EF278C89610044756F /* LocationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
 		1E6FB4F2278C89AE0044756F /* KLDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLDocument.swift; sourceTree = "<group>"; };
 		1E6FB4F4278C8A4F0044756F /* DetailListCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListCellData.swift; sourceTree = "<group>"; };
@@ -173,6 +177,7 @@
 				1E1FB44F278BAC0D003F71DF /* BridgingHeader.h */,
 				1E1FAEDA278BA582003F71DF /* AppDelegate.swift */,
 				1E1FAEDC278BA582003F71DF /* SceneDelegate.swift */,
+				1E4FA1E3278D05CA007B0253 /* Network */,
 				1E6FB4F8278C8B060044756F /* Presentation */,
 				1E6FB4F1278C896A0044756F /* Entities */,
 				1E1FAEE3278BA584003F71DF /* Assets.xcassets */,
@@ -254,6 +259,15 @@
 				1E1FB58C278BAD47003F71DF /* MTMapCircle.h */,
 			);
 			path = Headers;
+			sourceTree = "<group>";
+		};
+		1E4FA1E3278D05CA007B0253 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1E4FA1E1278D05C3007B0253 /* LocalAPI.swift */,
+				1E4FA1E4278D077E007B0253 /* LocalNetwork.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		1E6FB4F1278C896A0044756F /* Entities */ = {
@@ -392,8 +406,10 @@
 				1E6FB50E278C94310044756F /* DetailListBackgroundView.swift in Sources */,
 				1E6FB510278C943C0044756F /* DetailListBackgroundViewModel.swift in Sources */,
 				1E6FB4F3278C89AE0044756F /* KLDocument.swift in Sources */,
+				1E4FA1E5278D077E007B0253 /* LocalNetwork.swift in Sources */,
 				1E6FB4F7278C8AFF0044756F /* LocationInformationViewController.swift in Sources */,
 				1E6FB50A278C8EE00044756F /* MTMapViewError.swift in Sources */,
+				1E4FA1E2278D05C3007B0253 /* LocalAPI.swift in Sources */,
 				1E6FB50C278C92890044756F /* DetailListCell.swift in Sources */,
 				1E1FAEDB278BA582003F71DF /* AppDelegate.swift in Sources */,
 				1E6FB4F5278C8A4F0044756F /* DetailListCellData.swift in Sources */,
