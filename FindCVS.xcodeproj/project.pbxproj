@@ -59,6 +59,8 @@
 		1E6FB508278C8C200044756F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1E6FB507278C8C200044756F /* SnapKit */; };
 		1E6FB50A278C8EE00044756F /* MTMapViewError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6FB509278C8EE00044756F /* MTMapViewError.swift */; };
 		1E6FB50C278C92890044756F /* DetailListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6FB50B278C92890044756F /* DetailListCell.swift */; };
+		1E6FB50E278C94310044756F /* DetailListBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6FB50D278C94310044756F /* DetailListBackgroundView.swift */; };
+		1E6FB510278C943C0044756F /* DetailListBackgroundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6FB50F278C943C0044756F /* DetailListBackgroundViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -119,6 +121,8 @@
 		1E6FB4F9278C8B390044756F /* LocationInformationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationViewModel.swift; sourceTree = "<group>"; };
 		1E6FB509278C8EE00044756F /* MTMapViewError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTMapViewError.swift; sourceTree = "<group>"; };
 		1E6FB50B278C92890044756F /* DetailListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListCell.swift; sourceTree = "<group>"; };
+		1E6FB50D278C94310044756F /* DetailListBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListBackgroundView.swift; sourceTree = "<group>"; };
+		1E6FB50F278C943C0044756F /* DetailListBackgroundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListBackgroundViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +273,8 @@
 				1E6FB4F6278C8AFF0044756F /* LocationInformationViewController.swift */,
 				1E6FB4F9278C8B390044756F /* LocationInformationViewModel.swift */,
 				1E6FB50B278C92890044756F /* DetailListCell.swift */,
+				1E6FB50D278C94310044756F /* DetailListBackgroundView.swift */,
+				1E6FB50F278C943C0044756F /* DetailListBackgroundViewModel.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -383,6 +389,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E6FB4F0278C89610044756F /* LocationData.swift in Sources */,
+				1E6FB50E278C94310044756F /* DetailListBackgroundView.swift in Sources */,
+				1E6FB510278C943C0044756F /* DetailListBackgroundViewModel.swift in Sources */,
 				1E6FB4F3278C89AE0044756F /* KLDocument.swift in Sources */,
 				1E6FB4F7278C8AFF0044756F /* LocationInformationViewController.swift in Sources */,
 				1E6FB50A278C8EE00044756F /* MTMapViewError.swift in Sources */,

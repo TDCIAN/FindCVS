@@ -23,7 +23,7 @@ class DetailListCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setDate(_ data: DetailListCellData) {
+    func setData(_ data: DetailListCellData) {
         placeNameLabel.text = data.placeName
         addressLabel.text = data.address
         distanceLabel.text = data.distance
