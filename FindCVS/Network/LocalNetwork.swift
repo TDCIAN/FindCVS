@@ -15,7 +15,7 @@ class LocalNetwork {
         self.session = session
     }
     
-    func geoLocation(by mapPoint: MTMapPoint) -> Single<Result<LocationData, URLError>> {
+    func getLocation(by mapPoint: MTMapPoint) -> Single<Result<LocationData, URLError>> {
         guard let url = api.getLocation(by: mapPoint).url else {
             return .just(.failure(URLError(.badURL)))
         }

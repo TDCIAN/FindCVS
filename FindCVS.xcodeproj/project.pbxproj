@@ -48,6 +48,7 @@
 		1E1FB5C1278BADF5003F71DF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1FB5C0278BADF5003F71DF /* libsqlite3.tbd */; };
 		1E4FA1E2278D05C3007B0253 /* LocalAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4FA1E1278D05C3007B0253 /* LocalAPI.swift */; };
 		1E4FA1E5278D077E007B0253 /* LocalNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4FA1E4278D077E007B0253 /* LocalNetwork.swift */; };
+		1E4FA1E7278D0A17007B0253 /* LocationInformationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4FA1E6278D0A17007B0253 /* LocationInformationModel.swift */; };
 		1E6FB4F0278C89610044756F /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6FB4EF278C89610044756F /* LocationData.swift */; };
 		1E6FB4F3278C89AE0044756F /* KLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6FB4F2278C89AE0044756F /* KLDocument.swift */; };
 		1E6FB4F5278C8A4F0044756F /* DetailListCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6FB4F4278C8A4F0044756F /* DetailListCellData.swift */; };
@@ -118,6 +119,7 @@
 		1E1FB5C0278BADF5003F71DF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		1E4FA1E1278D05C3007B0253 /* LocalAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAPI.swift; sourceTree = "<group>"; };
 		1E4FA1E4278D077E007B0253 /* LocalNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNetwork.swift; sourceTree = "<group>"; };
+		1E4FA1E6278D0A17007B0253 /* LocationInformationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationModel.swift; sourceTree = "<group>"; };
 		1E6FB4EF278C89610044756F /* LocationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
 		1E6FB4F2278C89AE0044756F /* KLDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLDocument.swift; sourceTree = "<group>"; };
 		1E6FB4F4278C8A4F0044756F /* DetailListCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListCellData.swift; sourceTree = "<group>"; };
@@ -270,6 +272,16 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		1E4FA1E8278D0A1C007B0253 /* LocationInfo */ = {
+			isa = PBXGroup;
+			children = (
+				1E6FB4F6278C8AFF0044756F /* LocationInformationViewController.swift */,
+				1E4FA1E6278D0A17007B0253 /* LocationInformationModel.swift */,
+				1E6FB4F9278C8B390044756F /* LocationInformationViewModel.swift */,
+			);
+			path = LocationInfo;
+			sourceTree = "<group>";
+		};
 		1E6FB4F1278C896A0044756F /* Entities */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,8 +296,7 @@
 		1E6FB4F8278C8B060044756F /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				1E6FB4F6278C8AFF0044756F /* LocationInformationViewController.swift */,
-				1E6FB4F9278C8B390044756F /* LocationInformationViewModel.swift */,
+				1E4FA1E8278D0A1C007B0253 /* LocationInfo */,
 				1E6FB50B278C92890044756F /* DetailListCell.swift */,
 				1E6FB50D278C94310044756F /* DetailListBackgroundView.swift */,
 				1E6FB50F278C943C0044756F /* DetailListBackgroundViewModel.swift */,
@@ -413,6 +424,7 @@
 				1E6FB50C278C92890044756F /* DetailListCell.swift in Sources */,
 				1E1FAEDB278BA582003F71DF /* AppDelegate.swift in Sources */,
 				1E6FB4F5278C8A4F0044756F /* DetailListCellData.swift in Sources */,
+				1E4FA1E7278D0A17007B0253 /* LocationInformationModel.swift in Sources */,
 				1E1FAEDD278BA582003F71DF /* SceneDelegate.swift in Sources */,
 				1E6FB4FA278C8B390044756F /* LocationInformationViewModel.swift in Sources */,
 			);
