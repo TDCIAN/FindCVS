@@ -12,16 +12,16 @@ import RxCocoa
 struct LocationInformationViewModel {
     let disposeBag = DisposeBag()
     
-    // subViewModels
+    //subViewModels
     let detailListBackgroundViewModel = DetailListBackgroundViewModel()
     
-    // viewModel에서 view로
+    //viewModel -> view
     let setMapCenter: Signal<MTMapPoint>
     let errorMessage: Signal<String>
     let detailListCellData: Driver<[DetailListCellData]>
     let scrollToSelectedLocation: Signal<Int>
     
-    // view에서 viewModel로
+    //view -> viewModel
     let currentLocation = PublishRelay<MTMapPoint>()
     let mapCenterPoint = PublishRelay<MTMapPoint>()
     let selectPOIItem = PublishRelay<MTMapPOIItem>()
@@ -29,10 +29,10 @@ struct LocationInformationViewModel {
     let currentLocationButtonTapped = PublishRelay<Void>()
     let detailListItemSelected = PublishRelay<Int>()
     
-    private let documentData = PublishSubject<KLDocument>()
+    private let documentData = PublishSubject<[KLDocument]>()
     
     init(model: LocationInformationModel = LocationInformationModel()) {
-        // MARK: 네트워크 통신으로 데이터 불러오기
+        //MARK: 네트워크 통신으로 데이터 불러오기
         let cvsLocationDataResult = mapCenterPoint
             .flatMapLatest(model.getLocation)
             .share()
@@ -65,17 +65,10 @@ struct LocationInformationViewModel {
             .bind(to: documentData)
             .disposed(by: disposeBag)
         
-        // MARK: 지도 중심점 설정
+        //MARK: 지도 중심점 설정
         let selectDetailListItem = detailListItemSelected
             .withLatestFrom(documentData) { $1[$0] }
-            .map { data -> MTMapPoint in
-                guard let longitude = Double(data.x),
-                      let latitude = Double(data.y) else {
-                          return MTMapPoint()
-                      }
-                let geoCoord = MTMapPointGeo(latitude: latitude, longitude: longitude)
-                return MTMapPoint(geoCoord: geoCoord)
-            }
+            .map(model.documentToMTMapPoint)
         
         let moveToCurrentLocation = currentLocationButtonTapped
             .withLatestFrom(currentLocation)
@@ -88,7 +81,7 @@ struct LocationInformationViewModel {
             )
         
         setMapCenter = currentMapCenter
-            .asSignal(onErrorJustReturn: .empty())
+            .asSignal(onErrorSignalWith: .empty())
         
         errorMessage = Observable
             .merge(
