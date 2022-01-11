@@ -51,6 +51,8 @@
 		1E4FA1E7278D0A17007B0253 /* LocationInformationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4FA1E6278D0A17007B0253 /* LocationInformationModel.swift */; };
 		1E4FA1F7278D4019007B0253 /* LocalNetworkStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4FA1F6278D4019007B0253 /* LocalNetworkStub.swift */; };
 		1E4FA1F9278D4194007B0253 /* networkDummy.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E4FA1F8278D4194007B0253 /* networkDummy.json */; };
+		1E4FA1FB278D4272007B0253 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4FA1FA278D4272007B0253 /* Dummy.swift */; };
+		1E4FA1FD278D43E3007B0253 /* LocationInformationModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4FA1FC278D43E3007B0253 /* LocationInformationModelTests.swift */; };
 		1E6FB4F0278C89610044756F /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6FB4EF278C89610044756F /* LocationData.swift */; };
 		1E6FB4F3278C89AE0044756F /* KLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6FB4F2278C89AE0044756F /* KLDocument.swift */; };
 		1E6FB4F5278C8A4F0044756F /* DetailListCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6FB4F4278C8A4F0044756F /* DetailListCellData.swift */; };
@@ -132,6 +134,8 @@
 		1E4FA1ED278D3FD7007B0253 /* FindCVSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindCVSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E4FA1F6278D4019007B0253 /* LocalNetworkStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNetworkStub.swift; sourceTree = "<group>"; };
 		1E4FA1F8278D4194007B0253 /* networkDummy.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = networkDummy.json; sourceTree = "<group>"; };
+		1E4FA1FA278D4272007B0253 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
+		1E4FA1FC278D43E3007B0253 /* LocationInformationModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationModelTests.swift; sourceTree = "<group>"; };
 		1E6FB4EF278C89610044756F /* LocationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
 		1E6FB4F2278C89AE0044756F /* KLDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLDocument.swift; sourceTree = "<group>"; };
 		1E6FB4F4278C8A4F0044756F /* DetailListCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListCellData.swift; sourceTree = "<group>"; };
@@ -312,6 +316,8 @@
 			children = (
 				1E4FA1F6278D4019007B0253 /* LocalNetworkStub.swift */,
 				1E4FA1F8278D4194007B0253 /* networkDummy.json */,
+				1E4FA1FA278D4272007B0253 /* Dummy.swift */,
+				1E4FA1FC278D43E3007B0253 /* LocationInformationModelTests.swift */,
 			);
 			path = FindCVSTests;
 			sourceTree = "<group>";
@@ -584,7 +590,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E4FA1FB278D4272007B0253 /* Dummy.swift in Sources */,
 				1E4FA1F7278D4019007B0253 /* LocalNetworkStub.swift in Sources */,
+				1E4FA1FD278D43E3007B0253 /* LocationInformationModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
